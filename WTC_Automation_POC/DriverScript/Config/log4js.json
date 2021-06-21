@@ -1,0 +1,19 @@
+{
+    "appenders": {
+    "console" : {
+        "type": "console",
+        "category": "console"
+    },
+    
+    "file" : {
+        "category": "test-file-appender",
+        "type": "file",
+        "filename": "log_file.log",
+        "backups": 2
+    }
+    },
+    "categories": {
+        "default" :{"appenders": ["console", "file"], "level": "DEBUG"},
+        "NS-WEB" : {"appenders": ["file"], "level": "DEBUG"}
+    }
+}
