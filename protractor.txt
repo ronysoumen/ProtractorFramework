@@ -1,0 +1,37 @@
+
+Skip to end of metadata
+Created by Patel Kishan, last modified on Sep 28, 2016Go to start of metadata
+Here are the following things which can come into my mind which could help you setup your framework-
+
+IDE: Download the latest VS Code version - https://code.visualstudio.com/download
+
+Install typescript globally:  npm install -g typescript
+
+Install protractor globally: npm install -g protractor
+
+
+Create your project folder: e.g. nsWeb
+Setup your project folder for node and typescript:
+
+npm init -f  // will create default package.json stating its nodejs project 
+tsc --init    // will create tsconfig.json stating its typescript project
+
+
+Install typings and dev dependencies-
+npm install --save-dev protractor // this will install protractor as a dev dependency
+npm install --save-dev typescript // this will install typescript as a dev dependency
+npm install --save-dev @types/jasmine // jasmine typings
+npm install --save-dev @types/node     // node typings
+
+
+At this point you have setup your basic protractor-typescript project and you can see all the typings and dependencies in package.json. Now you are good to write your typed scripts :).
+
+Now compile your scripts by running:(Converting .ts files to .js files)
+tsc or tsc -w
+
+
+After successful compilation all your JavaScript files would be generated.
+
+
+Run Protractor : protractor conf.js
+
